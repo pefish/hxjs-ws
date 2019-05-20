@@ -283,12 +283,12 @@ exports.__esModule = true;
 var _this = void 0;
 
 var ecc_config = {
-    address_prefix: process.env.npm_config__graphene_ecc_default_address_prefix || "GPH"
+    address_prefix: process.env.npm_config__graphene_ecc_default_address_prefix || "HX"
 };
 
 _this = {
     core_asset: "CORE",
-    address_prefix: "GPH",
+    address_prefix: "HX",
     expire_in_secs: 15,
     expire_in_secs_proposal: 24 * 60 * 60,
     review_in_secs_committee: 24 * 60 * 60,
@@ -355,8 +355,8 @@ _this = {
 
     reset: function reset() {
         _this.core_asset = "CORE";
-        _this.address_prefix = "GPH";
-        ecc_config.address_prefix = "GPH";
+        _this.address_prefix = "HX";
+        ecc_config.address_prefix = "HX";
         _this.expire_in_secs = 15;
         _this.expire_in_secs_proposal = 24 * 60 * 60;
 
@@ -364,7 +364,7 @@ _this = {
     },
 
     setPrefix: function setPrefix() {
-        var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "GPH";
+        var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "HX";
 
         _this.address_prefix = prefix;
         ecc_config.address_prefix = prefix;
